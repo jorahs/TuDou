@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">物联生活</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="country">国家:</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <integer name="app_version_code">1</integer>
+
+    <string name="app_version">1.0.0</string>
+    <string name="proj_name">ShareSDK_TPL</string>
+    <string name="share_sdk">Share SDK</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">网络故障，无法连接ShareSDK</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="ok">确定</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- Action Bar action items -->
+    <string name="action_search">搜索</string>
+    <string name="action_location_found">展开</string>
+    <string name="action_refresh">列表</string>
+    <string name="action_contacts">Contacts</string>
+    <string name="action_help">帮助</string>
+    <string name="action_check_updates">更新</string>
+    <!--
+        <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Find People</item>
+        <item>Photos</item>
+        <item>Communities</item>
+        <item>Pages</item>
+        <item>What\'s Hot</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    Nav Drawer Menu Items
+    -->
+    <!-- Search -->
+    <string name="search_hint">搜索内容</string>
+    <!-- Content Description -->
+    <string name="xinxiang_tech">智能设备专家</string>
+    <string name="my_function">我的功能</string>
+    <string name="my_production">我的产品</string>
+    <string name="task">任务</string>
+    <string name="talking">聊天</string>
+    <string name="navigation">导航</string>
+    <string name="loading">正在加载中</string>
+    <string name="gpslocate">定位</string>
+    <string name="gpsfollow">跟随</string>
+    <string name="gpsrotate">旋转</string>
+    <string name="p2refresh_release_refresh">提示</string>
+    <string name="p2refresh_refresh_lasttime">更新</string>
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_doing_end_refresh">加载中...</string>
+    <string name="p2refresh_end_click_load_more">手动刷新完成</string>
+    <string name="p2refresh_end_load_more">自动刷新完成</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新</string>
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    
+     <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="website">http://www.shareSDK.cn</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装易信，需要安装易信才能使用</string>
+    
+	<string name="sinaweibo">新浪微博</string>
+	<string name="tencentweibo">腾讯微博</string>
+	<string name="qzone">QQ空间</string>
+	<string name="wechat">微信好友</string>
+	<string name="wechatmoments">微信朋友圈</string>
+	<string name="wechatfavorite">微信收藏</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">人人网</string>
+	<string name="kaixin">开心网</string>
+	<string name="email">邮件</string>
+	<string name="shortmessage">信息</string>
+	<string name="sohumicroblog">搜狐微博</string>
+	<string name="sohusuishenkan">搜狐随身看</string>
+	<string name="neteasemicroblog">网易微博</string>
+	<string name="douban">豆瓣</string>
+	<string name="youdao">有道云笔记</string>
+	<string name="evernote">印象笔记</string>
+	<string name="linkedin">Linked In</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	<string name="vkontakte">VK</string>
+	<string name="instagram">Instagram</string>
+	<string name="yixin">易信</string>
+	<string name="yixinmoments">易信朋友圈</string>
+	
+	<string name="share_to_qzone">分享到QQ空间</string>
+	<string name="incentive_title">分享有奖</string>
+	<string name="failed_to_start_incentive_page">无法打开“分享有奖页面”</string>
+	<string name="download_faield">下载失败</string>
+	<string name="app_downloading">应用正在后台下载</string>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">"
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.luwei.ui.util.CircledNetworkImageView
+                    android:id="@+id/commit_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/circle_avatar"></com.luwei.ui.util.CircledNetworkImageView>
+
+                <TextView
+                    android:id="@+id/commit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="8"
+                    android:text="姓名"
+                    android:textColor="@color/remote"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/commit_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="time+"
+                    android:textColor="@color/remote" />
+            </LinearLayout>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/commit_background"
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:background="@color/custom_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/loading_background"></com.android.volley.toolbox.NetworkImageView>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@color/list_item_title"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/custom_commit_define"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/custom_commit_context"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/custom_commit_facture" />
+
+        <EditText
+            android:id="@+id/commit_context_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:hint="添加评论" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:text="发送"
+            android:textColor="@color/blue"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</RelativeLayout>

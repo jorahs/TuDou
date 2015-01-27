@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 这是bottom用到的color -->
+    <color name="transparent">#0000</color>
+    <color name="weibo_listtab_off">#8d8d8d</color>
+    <!-- 这是第三方登录用到的color -->
+    <color name="page_back">#fff2f2f2</color>
+    <color name="logo_text_color">#ff7f7f7f</color>
+    <color name="white">#ffffffff</color>
+    <color name="login_with_other_plat_text_color">#ff383838</color>
+
+    <!-- 这是Drawer的color -->
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#696969</color>
+    <color name="list_background_pressed">#1E90FF</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_item_bg">#696969</color>
+    <color name="counter_text_bg">#00CED1</color>
+    <color name="counter_text_color">#696969</color>
+
+    <!-- Menu onClick 的 -->
+    <color name="purple">#9932CC</color>
+    <color name="blue_task">#32CD32</color>
+    <color name="yellow">#FFA500</color>
+    <color name="light_yellow">#FFE4C4</color>
+    <color name="blue">#00BFFF </color>
+    <color name="green">#0000FF</color>
+	<color name="remote">#808080</color>
+	<color name="seletorlistblue">#00BFFF</color>
+	<color name="countblue">#3CB371</color>
+	<color name="background_tab_pressed">#6633B5E5</color>
+	<color name="background_window">#FFE5E5E5</color>
+	<color name="custom_background">#DCDCDC</color>
+	<color name="grey"> #ebebeb</color>
+</resources>

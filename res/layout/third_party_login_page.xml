@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcome_backgroub"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/below_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/below" />
+
+    <ImageView
+        android:id="@+id/front_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/aligntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/fronts" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/tvQq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/aligntext"
+        android:src="@drawable/tengxun" />
+
+    <ImageView
+        android:id="@+id/tvWeibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/aligntext"
+        android:src="@drawable/sianweibo" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aligntext"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logout" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="®重庆信翔科技有限公司"/>
+
+</RelativeLayout>

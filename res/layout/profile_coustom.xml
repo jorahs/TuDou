@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/profile_title" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/avatar_vollay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/avatar_male" >
+        </com.android.volley.toolbox.NetworkImageView>
+
+        <TextView
+            android:id="@+id/profile_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:text="用户未登录"
+            android:textSize="15sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/profile_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="位置无法确认"
+            android:textSize="10sp"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="65dp" >
+
+            <ImageView
+                android:id="@+id/profile_lagout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/profile_lagout" />
+
+            <ImageView
+                android:id="@+id/profile_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/profile_seting" />
+
+            <ImageView
+                android:id="@+id/profile_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/profile_help" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

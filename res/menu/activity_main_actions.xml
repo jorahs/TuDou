@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Search Widget -->
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="com.actionbarsherlock.widget.SearchView"
+        android:icon="@drawable/ic_search_n"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/action_search"/>
+
+    <!-- Refresh -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_task"
+        android:showAsAction="always"
+        android:title="@string/action_refresh"/>
+
+    <!-- change arrow -->
+    <item
+        android:id="@+id/action_change_arrow"
+        android:icon="@drawable/ic_action_arrow_down"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/action_location_found">
+        <menu>
+            <item android:title="@string/task"
+                  android:id="@+id/menu_task"
+                  android:icon="@drawable/ic_action_task"/>
+            <item android:title="@string/talking"
+                  android:id="@+id/menu_talking"
+                  android:icon="@drawable/ic_action_talking"/>
+            <item android:title="@string/navigation"
+                  android:id="@+id/menu_navigation"
+                  android:icon="@drawable/ic_action_navigation"/>
+        </menu>
+    </item>
+
+</menu>
