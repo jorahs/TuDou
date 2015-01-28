@@ -104,7 +104,7 @@ public class RectNetworkImageView extends ImageView {
 	 * Loads the image for the view if it isn't already loaded.
 	 * 
 	 * @param isInLayoutPass
-	 *            True if this was invoked from a layout pass, false otherwise.
+	 *            True if this was invoked from a nine_points pass, false otherwise.
 	 */
 	private void loadImageIfNecessary(final boolean isInLayoutPass) {
 		int width = getWidth();
@@ -162,10 +162,10 @@ public class RectNetworkImageView extends ImageView {
 					public void onResponse(final ImageContainer response,
 							boolean isImmediate) {
 						// If this was an immediate response that was delivered
-						// inside of a layout
+						// inside of a nine_points
 						// pass do not set the image immediately as it will
 						// trigger a requestLayout
-						// inside of a layout. Instead, defer setting the image
+						// inside of a nine_points. Instead, defer setting the image
 						// by posting back to
 						// the main thread.
 						if (isImmediate && isInLayoutPass) {

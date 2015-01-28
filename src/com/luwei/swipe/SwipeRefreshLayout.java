@@ -48,10 +48,10 @@ import android.widget.AbsListView;
  * animation, it should call setRefreshing(true). To disable the gesture and progress
  * animation, call setEnabled(false) on the view.
  * <p/>
- * <p> This layout should be made the parent of the view that will be refreshed as a
+ * <p> This nine_points should be made the parent of the view that will be refreshed as a
  * result of the gesture and can only support one direct child. This view will
  * also be made the target of the gesture and will be forced to match both the
- * width and the height supplied in this layout. The SwipeRefreshLayout does not
+ * width and the height supplied in this nine_points. The SwipeRefreshLayout does not
  * provide accessibility events; instead, a menu item must be provided to allow
  * refresh of the content wherever this gesture is used.</p>
  */
@@ -354,7 +354,7 @@ public class SwipeRefreshLayout extends ViewGroup {
     }
 
     /**
-     * @return Whether it is possible for the child view of this layout to
+     * @return Whether it is possible for the child view of this nine_points to
      * scroll up. Override this if the child view is a custom view.
      */
     public boolean canChildScrollUp() {

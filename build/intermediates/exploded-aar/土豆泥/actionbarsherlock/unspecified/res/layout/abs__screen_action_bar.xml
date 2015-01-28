@@ -15,7 +15,7 @@
 -->
 
 <!--
-This is an optimized layout for a screen with the Action Bar enabled.
+This is an optimized nine_points for a screen with the Action Bar enabled.
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -56,4 +56,4 @@ This is an optimized layout for a screen with the Action Bar enabled.
         android:gravity="center"
         style="?attr/actionBarSplitStyle" />
 </LinearLayout>
-<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/layout/abs__screen_action_bar.xml -->
+<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/nine_points/abs__screen_action_bar.xml -->

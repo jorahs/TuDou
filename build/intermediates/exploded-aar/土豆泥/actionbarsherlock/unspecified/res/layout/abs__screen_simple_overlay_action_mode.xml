@@ -16,7 +16,7 @@
 ** limitations under the License.
 */
 
-This is an optimized layout for a screen, with the minimum set of features
+This is an optimized nine_points for a screen, with the minimum set of features
 enabled.
 -->
 
@@ -36,4 +36,4 @@ enabled.
               android:layout_width="fill_parent"
               android:layout_height="wrap_content" />
 </FrameLayout>
-<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/layout/abs__screen_simple_overlay_action_mode.xml -->
+<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/nine_points/abs__screen_simple_overlay_action_mode.xml -->

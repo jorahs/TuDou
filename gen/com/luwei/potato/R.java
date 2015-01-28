@@ -185,7 +185,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonStyleSmall=0x7f010019;
-        /**  Specifies a layout for custom navigation. Overrides navigationMode. 
+        /**  Specifies a nine_points for custom navigation. Overrides navigationMode.
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -264,7 +264,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int homeAsUpIndicator=0x7f01003b;
-        /**  Specifies a layout to use for the "home" section of the action bar. 
+        /**  Specifies a nine_points to use for the "home" section of the action bar.
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -395,7 +395,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupMenuStyle=0x7f01003d;
-        /**  Whether space should be reserved in layout when an icon is missing. 
+        /**  Whether space should be reserved in nine_points when an icon is missing.
          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1830,11 +1830,11 @@ containing a value of this type.
            <tr><td><code>{@link #SherlockActionBar_background com.luwei.potato:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_backgroundSplit com.luwei.potato:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_backgroundStacked com.luwei.potato:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.luwei.potato:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.luwei.potato:customNavigationLayout}</code></td><td> Specifies a nine_points for custom navigation.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_displayOptions com.luwei.potato:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_divider com.luwei.potato:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_height com.luwei.potato:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_homeLayout com.luwei.potato:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_homeLayout com.luwei.potato:homeLayout}</code></td><td> Specifies a nine_points to use for the "home" section of the action bar.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_icon com.luwei.potato:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle com.luwei.potato:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_itemPadding com.luwei.potato:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
@@ -1920,7 +1920,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**
           <p>
           @attr description
-           Specifies a layout for custom navigation. Overrides navigationMode. 
+           Specifies a nine_points for custom navigation. Overrides navigationMode.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1985,7 +1985,7 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           Specifies a layout to use for the "home" section of the action bar. 
+           Specifies a nine_points to use for the "home" section of the action bar.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -2408,7 +2408,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_actionLayout android:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_actionLayout android:actionLayout}</code></td><td> An optional nine_points to be used as an action view.</td></tr>
            <tr><td><code>{@link #SherlockMenuItem_android_actionProviderClass android:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
            <tr><td><code>{@link #SherlockMenuItem_android_actionViewClass android:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
@@ -2457,7 +2457,7 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           An optional layout to be used as an action view.
+           An optional nine_points to be used as an action view.
              See {@link android.view.MenuItem#setActionView(android.view.View)}
              for more info. 
           <p>This corresponds to the global attribute
@@ -2633,7 +2633,7 @@ containing a value of this type.
            <tr><td><code>{@link #SherlockMenuView_itemBackground com.luwei.potato:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha com.luwei.potato:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_itemTextAppearance com.luwei.potato:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.luwei.potato:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.luwei.potato:preserveIconSpacing}</code></td><td> Whether space should be reserved in nine_points when an icon is missing.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_verticalDivider com.luwei.potato:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle com.luwei.potato:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
            </table>
@@ -2721,7 +2721,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**
           <p>
           @attr description
-           Whether space should be reserved in layout when an icon is missing. 
+           Whether space should be reserved in nine_points when an icon is missing.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -2854,7 +2854,7 @@ containing a value of this type.
            <tr><td><code>{@link #SherlockSpinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #SherlockSpinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
            <tr><td><code>{@link #SherlockSpinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_popupPromptView android:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
+           <tr><td><code>{@link #SherlockSpinner_android_popupPromptView android:popupPromptView}</code></td><td> Reference to a nine_points to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #SherlockSpinner_android_prompt android:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
            </table>
@@ -2930,8 +2930,8 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           Reference to a layout to use for displaying a prompt in the dropdown for
-             spinnerMode="dropdown". This layout must contain a TextView with the id
+           Reference to a nine_points to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown". This nine_points must contain a TextView with the id
              @android:id/text1 to be populated with the prompt text. 
           <p>This is a private symbol.
           @attr name android:popupPromptView

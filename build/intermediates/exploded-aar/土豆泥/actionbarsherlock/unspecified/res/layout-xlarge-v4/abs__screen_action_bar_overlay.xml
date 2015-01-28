@@ -15,7 +15,7 @@
 -->
 
 <!--
-This is an optimized layout for a screen with
+This is an optimized nine_points for a screen with
 the Action Bar enabled overlaying application content.
 -->
 
@@ -48,4 +48,4 @@ the Action Bar enabled overlaying application content.
                android:layout_height="wrap_content"
                android:layout_below="@id/abs__action_bar_container" />
 </RelativeLayout>
-<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml -->
+<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/nine_points-xlarge/abs__screen_action_bar_overlay.xml -->
