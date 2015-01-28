@@ -29,9 +29,9 @@ import com.luwei.domain.FittingMainifest;
 import com.luwei.domain.ScrollSelect;
 import com.luwei.init.URLs;
 import com.luwei.potato.R;
-import com.luwei.util.CustomListView;
-import com.luwei.util.CustomListView.OnLoadMoreListener;
-import com.luwei.util.CustomListView.OnRefreshListener;
+import com.luwei.ui.util.CustomListView;
+import com.luwei.ui.util.CustomListView.OnLoadMoreListener;
+import com.luwei.ui.util.CustomListView.OnRefreshListener;
 import com.luwei.util.JsonArrayUTF8Request;
 
 public class ProductionFittingList extends SherlockFragment {

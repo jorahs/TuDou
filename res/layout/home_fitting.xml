@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
-    <com.luwei.util.CustomListView
+    <com.luwei.ui.util.CustomListView
         android:visibility="gone"
         android:background="@color/white"
         android:id="@+id/fitting_listview"

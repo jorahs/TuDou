@@ -1,4 +1,4 @@
-package com.luwei.util;
+package com.luwei.ui.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
