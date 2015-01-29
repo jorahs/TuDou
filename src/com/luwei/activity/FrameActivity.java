@@ -31,6 +31,7 @@ import com.luwei.fragment.HomeWeb;
 import com.luwei.fragment.LocationModeSourceFragment;
 import com.luwei.fragment.NavigationPage;
 import com.luwei.fragment.PhotoShare;
+import com.luwei.fragment.ScreenLock;
 import com.luwei.potato.R;
 
 /**
@@ -66,6 +67,7 @@ public class FrameActivity extends SherlockFragmentActivity {
 
     HomePager homePager;
     PhotoShare photoShare;
+    ScreenLock screenLock;
     long exitTime = System.currentTimeMillis();
 
     // ActionBar部分的成员变量
@@ -109,7 +111,7 @@ public class FrameActivity extends SherlockFragmentActivity {
         HomeWeb homeWeb = new HomeWeb();
         homePager = new HomePager();
         photoShare = new PhotoShare();
-
+        screenLock = new ScreenLock();
         // 开始toggle视图的配置 Get the Title
         mTitle = mDrawerTitle = getTitle();
 
@@ -333,7 +335,7 @@ public class FrameActivity extends SherlockFragmentActivity {
                     changeFragment(new NavigationPage());
                     break;
                 case 6:
-                    changeFragment(photoShare);
+                    changeFragment(screenLock);
                     break;
                 case 7:
                     changeFragment(photoShare);

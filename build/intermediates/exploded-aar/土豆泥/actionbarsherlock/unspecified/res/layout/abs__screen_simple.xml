@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* //device/apps/common/assets/res/nine_points/screen_simple.xml
+/* //device/apps/common/assets/res/layout/screen_simple.xml
 **
 ** Copyright 2006, The Android Open Source Project
 **
@@ -17,7 +17,7 @@
 ** limitations under the License.
 */
 
-This is an optimized nine_points for a screen, with the minimum set of features
+This is an optimized layout for a screen, with the minimum set of features
 enabled.
 -->
 
@@ -36,4 +36,4 @@ enabled.
          android:foregroundGravity="fill_horizontal|top"
          android:foreground="?attr/windowContentOverlay" />
 </LinearLayout>
-<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/nine_points/abs__screen_simple.xml -->
+<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/layout/abs__screen_simple.xml -->

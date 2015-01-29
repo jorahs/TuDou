@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/passwordNotify"
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请连线"
+        android:textColor="@color/blue"
+        android:textSize="20sp"/>
 
     <com.luwei.ui.util.NinePointView
+        android:id="@+id/ninePointLock"
+        android:layout_weight="1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="fill_parent" />
 
-</RelativeLayout>
+</LinearLayout>

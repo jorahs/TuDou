@@ -15,7 +15,7 @@
 -->
 
 <!--
-This is an optimized nine_points for a screen with
+This is an optimized layout for a screen with
 the Action Bar enabled overlaying application content.
 -->
 
@@ -58,4 +58,4 @@ the Action Bar enabled overlaying application content.
                   android:visibility="gone"
                   android:gravity="center"/>
 </FrameLayout>
-<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/nine_points/abs__screen_action_bar_overlay.xml -->
+<!-- From: file:/E:/AndroidStudio/土豆泥/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml -->

@@ -193,7 +193,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonStyleSmall=0x7f010041;
-        /**  Specifies a nine_points for custom navigation. Overrides navigationMode.
+        /**  Specifies a layout for custom navigation. Overrides navigationMode. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -306,7 +306,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int homeAsUpIndicator=0x7f010063;
-        /**  Specifies a nine_points to use for the "home" section of the action bar.
+        /**  Specifies a layout to use for the "home" section of the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -441,7 +441,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupMenuStyle=0x7f010065;
-        /**  Whether space should be reserved in nine_points when an icon is missing.
+        /**  Whether space should be reserved in layout when an icon is missing. 
          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1130,15 +1130,15 @@ containing a value of this type.
         public static final int abs__textButton=0x7f080013;
         public static final int abs__title=0x7f08001b;
         public static final int abs__up=0x7f08000f;
-        public static final int action_change_arrow=0x7f080099;
-        public static final int action_refresh=0x7f080098;
-        public static final int action_search=0x7f080097;
+        public static final int action_change_arrow=0x7f08009b;
+        public static final int action_refresh=0x7f08009a;
+        public static final int action_search=0x7f080099;
         public static final int add_custom_pictures=0x7f08003d;
-        public static final int aligntext=0x7f080092;
-        public static final int avatar_vollay=0x7f080084;
-        public static final int below_anim=0x7f080090;
+        public static final int aligntext=0x7f080094;
+        public static final int avatar_vollay=0x7f080086;
+        public static final int below_anim=0x7f080092;
         public static final int child_checkbox=0x7f080056;
-        public static final int child_grid=0x7f080078;
+        public static final int child_grid=0x7f08007a;
         public static final int child_image=0x7f080055;
         public static final int commit_avatar=0x7f080033;
         public static final int commit_background=0x7f080036;
@@ -1147,16 +1147,16 @@ containing a value of this type.
         public static final int commit_time=0x7f080035;
         public static final int content_frame=0x7f080048;
         public static final int counter=0x7f080046;
-        public static final int current_pager_count=0x7f080075;
-        public static final int custom_avatar=0x7f08007b;
-        public static final int custom_background=0x7f08007e;
-        public static final int custom_commit=0x7f080080;
+        public static final int current_pager_count=0x7f080077;
+        public static final int custom_avatar=0x7f08007d;
+        public static final int custom_background=0x7f080080;
+        public static final int custom_commit=0x7f080082;
         public static final int custom_commit_context=0x7f080038;
         public static final int custom_commit_define=0x7f080037;
-        public static final int custom_goodjob=0x7f08007f;
-        public static final int custom_name=0x7f08007c;
-        public static final int custom_share=0x7f080081;
-        public static final int custom_time=0x7f08007d;
+        public static final int custom_goodjob=0x7f080081;
+        public static final int custom_name=0x7f08007e;
+        public static final int custom_share=0x7f080083;
+        public static final int custom_time=0x7f08007f;
         public static final int custom_wall_add_image=0x7f08003a;
         public static final int custom_wall_catera_id=0x7f080043;
         public static final int custom_wall_load_id=0x7f080041;
@@ -1171,13 +1171,13 @@ containing a value of this type.
         public static final int edit_query=0x7f080026;
         public static final int empty_main=0x7f08004d;
         public static final int firstIv=0x7f080072;
-        public static final int first_column=0x7f08008b;
+        public static final int first_column=0x7f08008d;
         public static final int firstmenu=0x7f080071;
         public static final int fitting_img=0x7f08004e;
         public static final int fitting_listview=0x7f08005d;
         public static final int fitting_progress_header=0x7f08005c;
         public static final int framelayout=0x7f080054;
-        public static final int front_anim=0x7f080091;
+        public static final int front_anim=0x7f080093;
         public static final int gps_follow_button=0x7f08006f;
         public static final int gps_locate_button=0x7f08006e;
         public static final int gps_radio_group=0x7f08006d;
@@ -1192,53 +1192,55 @@ containing a value of this type.
         public static final int home_pager=0x7f080062;
         public static final int home_tabs=0x7f080061;
         public static final int icon=0x7f080044;
-        public static final int imageWallBelow=0x7f08008e;
-        public static final int image_wall_spinner=0x7f08008f;
-        public static final int linearLayout1=0x7f080083;
+        public static final int imageWallBelow=0x7f080090;
+        public static final int image_wall_spinner=0x7f080091;
+        public static final int linearLayout1=0x7f080085;
         public static final int listMode=0x7f080001;
         public static final int listview_drawer=0x7f080049;
         public static final int load_more=0x7f08006b;
-        public static final int logout=0x7f080095;
+        public static final int logout=0x7f080097;
         public static final int lt_product=0x7f080060;
         public static final int map=0x7f08006c;
-        public static final int menu_navigation=0x7f08009c;
-        public static final int menu_talking=0x7f08009b;
-        public static final int menu_task=0x7f08009a;
+        public static final int menu_navigation=0x7f08009e;
+        public static final int menu_talking=0x7f08009d;
+        public static final int menu_task=0x7f08009c;
         public static final int myLocation=0x7f080073;
-        public static final int my_scroll_view=0x7f08008a;
-        public static final int nivTestView=0x7f080077;
+        public static final int my_scroll_view=0x7f08008c;
+        public static final int ninePointLock=0x7f080075;
+        public static final int nivTestView=0x7f080079;
         public static final int normal=0x7f080000;
         public static final int page_text=0x7f080069;
+        public static final int passwordNotify=0x7f080074;
         public static final int photoCount=0x7f08004c;
-        public static final int photo_preview=0x7f08007a;
+        public static final int photo_preview=0x7f08007c;
         public static final int photo_proview_view=0x7f08004a;
-        public static final int photo_wall_pager=0x7f080074;
-        public static final int picture_category=0x7f080079;
+        public static final int photo_wall_pager=0x7f080076;
+        public static final int picture_category=0x7f08007b;
         public static final int product_apply_button=0x7f080040;
-        public static final int product_comment=0x7f080082;
+        public static final int product_comment=0x7f080084;
         public static final int product_count_fitting=0x7f080050;
         public static final int product_fitting_more=0x7f080052;
         public static final int product_fitting_time=0x7f080051;
         public static final int product_function_fitting=0x7f080053;
         public static final int product_name_fitting=0x7f08004f;
-        public static final int profile_help=0x7f080089;
-        public static final int profile_lagout=0x7f080087;
-        public static final int profile_nickname=0x7f080085;
-        public static final int profile_position=0x7f080086;
-        public static final int profile_set=0x7f080088;
+        public static final int profile_help=0x7f08008b;
+        public static final int profile_lagout=0x7f080089;
+        public static final int profile_nickname=0x7f080087;
+        public static final int profile_position=0x7f080088;
+        public static final int profile_set=0x7f08008a;
         public static final int progress_header=0x7f08005e;
         public static final int pull_to_refresh_progress=0x7f08006a;
-        public static final int second_column=0x7f08008c;
-        public static final int select_state=0x7f080076;
+        public static final int second_column=0x7f08008e;
+        public static final int select_state=0x7f080078;
         public static final int showCustom=0x7f080007;
         public static final int showHome=0x7f080004;
         public static final int showTitle=0x7f080006;
         public static final int swip=0x7f08005f;
         public static final int tabMode=0x7f080002;
-        public static final int third_column=0x7f08008d;
+        public static final int third_column=0x7f08008f;
         public static final int title=0x7f080045;
-        public static final int tvQq=0x7f080093;
-        public static final int tvWeibo=0x7f080094;
+        public static final int tvQq=0x7f080095;
+        public static final int tvWeibo=0x7f080096;
         public static final int txtQuery=0x7f080032;
         public static final int useLogo=0x7f080003;
         public static final int view_pager=0x7f080068;
@@ -1247,7 +1249,7 @@ containing a value of this type.
         public static final int webView_reflush=0x7f080066;
         public static final int webView_subTitle=0x7f080065;
         public static final int wrap_content=0x7f080009;
-        public static final int zoom_image_view=0x7f080096;
+        public static final int zoom_image_view=0x7f080098;
     }
     public static final class integer {
         public static final int abs__max_action_buttons=0x7f0a0000;
@@ -1293,15 +1295,15 @@ containing a value of this type.
         public static final int home_pager=0x7f030024;
         public static final int home_web=0x7f030025;
         public static final int image_details=0x7f030026;
-        public static final int nine_points =0x7f030027;
-        public static final int listfooter_more=0x7f030028;
-        public static final int listitem_function=0x7f030029;
-        public static final int listitem_production=0x7f03002a;
-        public static final int locationmodesource_fragment=0x7f03002b;
-        public static final int menu_talking=0x7f03002c;
-        public static final int menu_task=0x7f03002d;
-        public static final int meun_navigation=0x7f03002e;
-        public static final int nagvigation_page=0x7f03002f;
+        public static final int listfooter_more=0x7f030027;
+        public static final int listitem_function=0x7f030028;
+        public static final int listitem_production=0x7f030029;
+        public static final int locationmodesource_fragment=0x7f03002a;
+        public static final int menu_talking=0x7f03002b;
+        public static final int menu_task=0x7f03002c;
+        public static final int meun_navigation=0x7f03002d;
+        public static final int nagvigation_page=0x7f03002e;
+        public static final int nine_points=0x7f03002f;
         public static final int photo_grally_wall=0x7f030030;
         public static final int photo_share=0x7f030031;
         public static final int photography=0x7f030032;
@@ -1818,11 +1820,11 @@ containing a value of this type.
            <tr><td><code>{@link #SherlockActionBar_background com.luwei.potato:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_backgroundSplit com.luwei.potato:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_backgroundStacked com.luwei.potato:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.luwei.potato:customNavigationLayout}</code></td><td> Specifies a nine_points for custom navigation.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.luwei.potato:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_displayOptions com.luwei.potato:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_divider com.luwei.potato:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_height com.luwei.potato:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_homeLayout com.luwei.potato:homeLayout}</code></td><td> Specifies a nine_points to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_homeLayout com.luwei.potato:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_icon com.luwei.potato:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle com.luwei.potato:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
            <tr><td><code>{@link #SherlockActionBar_itemPadding com.luwei.potato:itemPadding}</code></td><td>
@@ -1909,7 +1911,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**
           <p>
           @attr description
-           Specifies a nine_points for custom navigation. Overrides navigationMode.
+           Specifies a layout for custom navigation. Overrides navigationMode. 
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1974,7 +1976,7 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           Specifies a nine_points to use for the "home" section of the action bar.
+           Specifies a layout to use for the "home" section of the action bar. 
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -2408,7 +2410,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SherlockMenuItem_android_actionLayout android:actionLayout}</code></td><td>
-             An optional nine_points to be used as an action view.</td></tr>
+             An optional layout to be used as an action view.</td></tr>
            <tr><td><code>{@link #SherlockMenuItem_android_actionProviderClass android:actionProviderClass}</code></td><td>
              The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
@@ -2468,7 +2470,7 @@ containing a value of this type.
           <p>
           @attr description
           
-             An optional nine_points to be used as an action view.
+             An optional layout to be used as an action view.
              See {@link android.view.MenuItem#setActionView(android.view.View)}
              for more info.
         
@@ -2665,7 +2667,7 @@ containing a value of this type.
            <tr><td><code>{@link #SherlockMenuView_itemBackground com.luwei.potato:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha com.luwei.potato:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_itemTextAppearance com.luwei.potato:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.luwei.potato:preserveIconSpacing}</code></td><td> Whether space should be reserved in nine_points when an icon is missing.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.luwei.potato:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_verticalDivider com.luwei.potato:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
            <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle com.luwei.potato:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
            </table>
@@ -2753,7 +2755,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**
           <p>
           @attr description
-           Whether space should be reserved in nine_points when an icon is missing.
+           Whether space should be reserved in layout when an icon is missing. 
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -2892,7 +2894,7 @@ containing a value of this type.
            <tr><td><code>{@link #SherlockSpinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
            <tr><td><code>{@link #SherlockSpinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #SherlockSpinner_android_popupPromptView android:popupPromptView}</code></td><td>
-             Reference to a nine_points to use for displaying a prompt in the dropdown for
+             Reference to a layout to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #SherlockSpinner_android_prompt android:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
            </table>
@@ -2907,7 +2909,7 @@ containing a value of this type.
          */
         public static final int[] SherlockSpinner = {
             0x010100af, 0x01010175, 0x01010176, 0x0101017b,
-            0x01010262, 0x010102ac, 0x010102ad, 0x0101043d
+            0x01010262, 0x010102ac, 0x010102ad, 0x01010534
         };
         /**
           <p>
@@ -2973,8 +2975,8 @@ containing a value of this type.
           <p>
           @attr description
           
-             Reference to a nine_points to use for displaying a prompt in the dropdown for
-             spinnerMode="dropdown". This nine_points must contain a TextView with the id
+             Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown". This layout must contain a TextView with the id
              @android:id/text1 to be populated with the prompt text.
         
           <p>This is a private symbol.
