@@ -2,23 +2,73 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
-    <TextView
-        android:gravity="center"
-        android:id="@+id/passwordNotify"
-        android:layout_weight="0.2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="请连线"
-        android:textColor="@color/blue"
-        android:textSize="20sp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <com.luwei.ui.util.NinePointView
-        android:id="@+id/ninePointLock"
-        android:layout_weight="1"
+        <com.luwei.ui.util.LockPreview
+            android:layout_gravity="center"
+            android:id="@+id/preview_gesture_lock"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/gesture_lock_title"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_line_lock"
+            android:textSize="20sp"
+            android:textColor="@color/blue_task" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="15"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.luwei.ui.util.NineLockView
+            android:id="@+id/gesture_lock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/below_text"
+        android:layout_weight="0.1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="80dp"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="1dp"></View>
+
+        <TextView
+            android:id="@+id/manager_password"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manager_password"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:textSize="16sp"/>
+    </LinearLayout>
 </LinearLayout>

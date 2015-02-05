@@ -123,5 +123,8 @@
 	<string name="failed_to_start_incentive_page">无法打开“分享有奖页面”</string>
 	<string name="download_faield">下载失败</string>
 	<string name="app_downloading">应用正在后台下载</string>
+    <string name="draw_line_lock">请划出你的连线</string>
+    <string name="manager_password">管理密码</string>
+    <string name="forget_password">忘记密码</string>
 
 </resources>

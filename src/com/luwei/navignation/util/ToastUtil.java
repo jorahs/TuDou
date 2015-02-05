@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.luwei.navignation.util;
 
 import android.content.Context;
