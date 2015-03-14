@@ -75,13 +75,14 @@ public class ProductionFittingList extends SherlockFragment {
 				JsonArrayUTF8Request jsonArray = null;
 				try {
 					jsonArray = new JsonArrayUTF8Request(URLs.URL_Fittings, new JSONObject(new Gson().toJson(new ScrollSelect(mScroll,5))), new Listener<JSONArray>() {
-
 						@Override
 						public void onResponse(JSONArray response) {
+                            //按格式获取List
 							Type listType = new TypeToken<ArrayList<FittingMainifest>>() {
 							}.getType();
 							List<FittingMainifest> temp = new Gson().fromJson(
 									response.toString(), listType);
+
 							if(temp.size()!=5||mListView.getCount()>=mCount){
 								al.addAll(temp);
 								fa.notifyDataSetChanged();
@@ -91,6 +92,7 @@ public class ProductionFittingList extends SherlockFragment {
 								fa.notifyDataSetChanged();
 								mScroll++;
 							}
+
 						}
 					}, new ErrorListener() {
 

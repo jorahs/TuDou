@@ -78,7 +78,6 @@ public class LocationModeSourceFragment extends SherlockFragment implements Loca
                 aMap.setMyLocationType(AMap.LOCATION_TYPE_MAP_ROTATE);
                 break;
         }
-
     }
 
     /**

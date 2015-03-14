@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
@@ -23,9 +22,6 @@ public class ScreenLock extends SherlockFragment {
     NineLockView ninePoin;
     TextView title;
     LockPreview preview_gesture_lock;
-    TextView manager_password;
-    TextView forget_password;
-    LinearLayout below_text;
     private DisplayMetrics metrics = new DisplayMetrics();
 
     @Override
@@ -38,12 +34,9 @@ public class ScreenLock extends SherlockFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.nine_points, container, false);
-        manager_password = (TextView) rootView.findViewById(R.id.manager_password);
-        forget_password = (TextView) rootView.findViewById(R.id.forget_password);
         ninePoin = (NineLockView) rootView.findViewById(R.id.gesture_lock);
         title = (TextView) rootView.findViewById(R.id.gesture_lock_title);
         preview_gesture_lock = (LockPreview) rootView.findViewById(R.id.preview_gesture_lock);
-        below_text = (LinearLayout) rootView.findViewById(R.id.below_text);
         final StringBuffer str = new StringBuffer();
 
         ninePoin.setPassWordChange(new NineLockView.OnPassWordSetListeren() {
@@ -79,6 +72,7 @@ public class ScreenLock extends SherlockFragment {
             }
         });
 
+
         ninePoin.setSizeListeren(new NineLockView.OnSizeListeren() {
 
             @Override
@@ -94,14 +88,12 @@ public class ScreenLock extends SherlockFragment {
                     width = height;
                     title.setVisibility(View.GONE);
                     preview_gesture_lock.setVisibility(View.GONE);
-                    below_text.setVisibility(View.GONE);
                 } else {
                     offsetsX = 0;
                     offsetsY = 0;
                     height = width;
                     title.setVisibility(View.VISIBLE);
                     preview_gesture_lock.setVisibility(View.VISIBLE);
-                    below_text.setVisibility(View.VISIBLE);
                 }
 
                 //确定坐标

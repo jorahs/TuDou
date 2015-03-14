@@ -30,6 +30,7 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/wrap_gesture"
         android:layout_weight="15"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
@@ -41,34 +42,4 @@
             android:layout_height="match_parent" />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/below_text"
-        android:layout_weight="0.1"
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal">
-
-        <View
-            android:layout_weight="1"
-            android:layout_width="1dp"
-            android:layout_height="1dp"></View>
-
-        <TextView
-            android:id="@+id/manager_password"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/manager_password"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/forget_password"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forget_password"
-            android:textSize="16sp"/>
-    </LinearLayout>
 </LinearLayout>

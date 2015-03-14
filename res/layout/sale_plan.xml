@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#46d5dee8"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/linear_badge_sale_care"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="3dp"
+                    android:id="@+id/sale_care_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购物车"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sale_payfor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收银台"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tmp_margin_center_line"
+            android:layout_marginTop="5dp"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/blue" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ic_swip_actionbar"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:background="@drawable/swip_bar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sale_page_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

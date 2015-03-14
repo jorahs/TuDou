@@ -4,14 +4,17 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.luwei.activity.FrameActivity;
 import com.luwei.potato.R;
 import com.luwei.ui.util.PagerSlidingTabStrip;
 
@@ -31,12 +34,12 @@ public class HomePager extends SherlockFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        if(root == null){
+        if (root == null) {
             root = inflater.inflate(R.layout.home_pager, container, false);
 
             tabs = (PagerSlidingTabStrip) root.findViewById(R.id.home_tabs);
             tabs.setBackgroundResource(R.color.white);
-            tabs.setTextSize(22);
+            tabs.setTextSize(28);
             tabs.setShouldExpand(true);
             pager = (ViewPager) root.findViewById(R.id.home_pager);
             pager.setOffscreenPageLimit(3);
@@ -46,6 +49,23 @@ public class HomePager extends SherlockFragment {
 
             tabs.setDefineTextColor(getResources().getColor(R.color.blue),
                     0); //第一个tab颜色设置
+
+            ((FrameActivity) this.getSherlockActivity()).registerListeren(new FrameActivity.MyOnTouchListeren() {
+                @Override
+                public boolean onTouch(MotionEvent event) {
+                    int action = event.getAction();
+                    switch (action) {
+                        case MotionEvent.ACTION_MOVE:
+                            Log.d("XY", event.getX() + "  " + event.getY());
+                            break;
+                        default:
+                            break;
+                    }
+                    return true;
+                }
+            });
+
+
 
             tabs.setOnPageChangeListener(new OnPageChangeListener() {
 
@@ -89,9 +109,9 @@ public class HomePager extends SherlockFragment {
                 public void onPageScrollStateChanged(int arg0) {
                 }
             });
+
             return root;
-        }else
-        {
+        } else {
             ViewGroup parent = (ViewGroup) root.getParent();
             if (parent != null) {
                 parent.removeView(root);
@@ -102,11 +122,10 @@ public class HomePager extends SherlockFragment {
     }
 
     public class MyPagerAdapter extends FragmentPagerAdapter {
+        private final String[] TITLES = {"智能生活", "智能产品", "留言墙"};
         ProductionListFragment productionListFragment = new ProductionListFragment();
         ProductionFittingList productionFittingList = new ProductionFittingList();
         ProductionIntroduction productionIntroduction = new ProductionIntroduction();
-
-        private final String[] TITLES = {"智能生活", "智能产品", "留言墙"};
 
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -129,16 +148,16 @@ public class HomePager extends SherlockFragment {
                     if (productionListFragment.isDetached())
                         return new ProductionListFragment();
                     else
-                    return productionListFragment;
+                        return productionListFragment;
 
                 case 1:
                     if (productionFittingList.isDetached())
                         return new ProductionFittingList();
                     else
-                    return productionFittingList;
+                        return productionFittingList;
 
                 case 2:
-                    if(productionIntroduction.isDetached())
+                    if (productionIntroduction.isDetached())
                         return new ProductionIntroduction();
                     return productionIntroduction;
 

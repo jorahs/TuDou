@@ -12,6 +12,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -26,12 +27,13 @@ import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
 import com.luwei.adapters.MenuListAdapter;
 import com.luwei.domain.UserInfo;
+import com.luwei.fragment.GesturePartment;
 import com.luwei.fragment.HomePager;
 import com.luwei.fragment.HomeWeb;
 import com.luwei.fragment.LocationModeSourceFragment;
 import com.luwei.fragment.NavigationPage;
 import com.luwei.fragment.PhotoShare;
-import com.luwei.fragment.ScreenLock;
+import com.luwei.fragment.ServerSale;
 import com.luwei.potato.R;
 
 /**
@@ -48,9 +50,12 @@ import com.luwei.potato.R;
  *
  * @author gpicsdesigner@gmail.com
  *         目前越来越感到MainActivity像一个管理Fragment的容器。而不再像一个内容提供者。
+ *
+ * 更新
  */
 public class FrameActivity extends SherlockFragmentActivity {
     // DrawerLayout部分 的成员变量
+    MyOnTouchListeren myOnTouchListeren;
     DrawerLayout mDrawerLayout;
     ListView mDrawerList;
     ActionBarDrawerToggle mDrawerToggle;
@@ -58,17 +63,17 @@ public class FrameActivity extends SherlockFragmentActivity {
     String[] title; // 子Fragment的标题
     int[] counter; // 计数，ListView的item上。有什么用呢
     int[] icon; // listView的item 图标
-    private CharSequence mDrawerTitle;
-    private CharSequence mTitle;
     Fragment oldFrag;
     FragmentManager fragmentmanager;
     UserInfo profileInfo;
     MenuItem mDefine;
-
     HomePager homePager;
     PhotoShare photoShare;
-    ScreenLock screenLock;
+    ServerSale serverSale;
+    GesturePartment gesturePartment;
     long exitTime = System.currentTimeMillis();
+    private CharSequence mDrawerTitle;
+    private CharSequence mTitle;
 
     // ActionBar部分的成员变量
 
@@ -111,7 +116,8 @@ public class FrameActivity extends SherlockFragmentActivity {
         HomeWeb homeWeb = new HomeWeb();
         homePager = new HomePager();
         photoShare = new PhotoShare();
-        screenLock = new ScreenLock();
+        serverSale = new ServerSale();
+        gesturePartment = new GesturePartment();
         // 开始toggle视图的配置 Get the Title
         mTitle = mDrawerTitle = getTitle();
 
@@ -275,7 +281,6 @@ public class FrameActivity extends SherlockFragmentActivity {
 
                     @Override
                     public void onClick(View v) {
-                        System.out.println("icon 点击事件");
                     }
                 });
                 return true;
@@ -290,7 +295,6 @@ public class FrameActivity extends SherlockFragmentActivity {
 
                     @Override
                     public void onClick(View v) {
-                        System.out.println("icon 点击事件");
                     }
                 });
                 return true;
@@ -299,18 +303,6 @@ public class FrameActivity extends SherlockFragmentActivity {
                 return super.onOptionsItemSelected(item);
         }
 
-    }
-
-    /**
-     * Drawer内部listView的item，点击事件监听，注意是LISTVIEW
-     */
-    private class DrawerItemClickListener implements
-            ListView.OnItemClickListener {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position,
-                                long id) {
-            selectItem(position, view);
-        }
     }
 
     /**
@@ -335,10 +327,10 @@ public class FrameActivity extends SherlockFragmentActivity {
                     changeFragment(new NavigationPage());
                     break;
                 case 6:
-                    changeFragment(screenLock);
+                    changeFragment(gesturePartment);
                     break;
                 case 7:
-                    changeFragment(photoShare);
+                    changeFragment(serverSale);
                     break;
             }
             mDrawerList.setItemChecked(position, true);
@@ -368,8 +360,6 @@ public class FrameActivity extends SherlockFragmentActivity {
         }
     }
 
-    // -----------------------------------Activity状态更改调整区-------------------------------------------//
-
     /**
      * 更换actionBar的图标
      */
@@ -378,6 +368,8 @@ public class FrameActivity extends SherlockFragmentActivity {
         mTitle = title;
         getSupportActionBar().setTitle(mTitle);
     }
+
+    // -----------------------------------Activity状态更改调整区-------------------------------------------//
 
     /**
      * 同步状态，比如横屏与竖屏的切换。
@@ -398,7 +390,6 @@ public class FrameActivity extends SherlockFragmentActivity {
         // Pass any configuration change to the drawer toggles
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-
 
     /**
      * 首先FragmentFactory作为管理fragment替换工作的类，调用极其频繁
@@ -444,6 +435,34 @@ public class FrameActivity extends SherlockFragmentActivity {
             return false;
         } else {
             return true;
+        }
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if (myOnTouchListeren != null) {
+            myOnTouchListeren.onTouch(ev);
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+
+    public void registerListeren(MyOnTouchListeren myOnTouchListeren) {
+        this.myOnTouchListeren = myOnTouchListeren;
+    }
+
+    public interface MyOnTouchListeren {
+        public boolean onTouch(MotionEvent event);
+    }
+
+    /**
+     * Drawer内部listView的item，点击事件监听，注意是LISTVIEW
+     */
+    private class DrawerItemClickListener implements
+            ListView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position,
+                                long id) {
+            selectItem(position, view);
         }
     }
 

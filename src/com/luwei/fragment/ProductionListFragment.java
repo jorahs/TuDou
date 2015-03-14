@@ -37,9 +37,6 @@ public class ProductionListFragment extends SherlockFragment implements
     ListView lv;
     ArrayList<MainImage> al;
     boolean flag = false;
-    int lastItem;
-    private View rootView;//缓存Fragment view
-
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -49,7 +46,7 @@ public class ProductionListFragment extends SherlockFragment implements
                 pd.setVisibility(View.GONE);
                 swipeRefreshLayout.setVisibility(View.VISIBLE);
                 al = new ArrayList<MainImage>();
-                al.add(new MainImage(0, null, null, null, null, null, null,0));
+                al.add(new MainImage(0, null, null, null, null, null, null, 0));
                 al.addAll((ArrayList<MainImage>) msg.obj);
                 adapter = new ProductionListAdapter(al, getSherlockActivity());
                 lv.setAdapter(adapter);
@@ -58,7 +55,7 @@ public class ProductionListFragment extends SherlockFragment implements
 
             if (msg.what == UPDATE) {
                 al.clear();
-                al.add(new MainImage(0, null, null, null, null, null, null,0));
+                al.add(new MainImage(0, null, null, null, null, null, null, 0));
                 al.addAll((ArrayList<MainImage>) msg.obj);
                 adapter.notifyDataSetChanged();
                 System.out.println("数量" + lv.getFooterViewsCount());
@@ -83,6 +80,8 @@ public class ProductionListFragment extends SherlockFragment implements
             }
         }
     };
+    int lastItem;
+    private View rootView;//缓存Fragment view
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
